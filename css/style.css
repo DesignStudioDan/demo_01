@@ -275,6 +275,9 @@ h1 {
   .styling-item img {
     height: 780px;
   }
+  .credit-list a {
+    column-gap: 0.5em;
+  }
   .product {
     column-gap: 0.5em;
     font-size: 1.5em;
