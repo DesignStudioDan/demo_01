@@ -1,0 +1,291 @@
+.pt-xs {
+  padding-top: 8px;
+}
+.pt-s {
+  padding-top: 16px;
+}
+.pt-m {
+  padding-top: 32px;
+}
+.pt-l {
+  padding-top: 64px;
+}
+.pt-xl {
+  padding-top: 128px;
+}
+.pb-xs {
+  padding-bottom: 8px;
+}
+.pb-s {
+  padding-bottom: 16px;
+}
+.pb-m {
+  padding-bottom: 32px;
+}
+.pb-l {
+  padding-bottom: 64px;
+}
+.pb-xl {
+  padding-bottom: 128px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.content {
+  width: 100%;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  line-height: 2;
+  overflow: hidden;
+}
+
+.kv {
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  position: relative;
+}
+h1 {
+  display: table-cell;
+  vertical-align: middle;
+  color: #333;
+  font-size: 4.5em;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1);
+}
+.kv span {
+  display: block;
+  font-size: 0.3em;
+  line-height: 1.5;
+}
+.kv img {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: -1;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeUp {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.displayed {
+  animation: fadeUp 1s forwards;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.styling-item {
+  height: fit-content;
+}
+.styling-item img {
+  height: 520px;
+}
+.styling {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-photo {
+  text-align: center;
+}
+.sub-photo-left {
+  text-align: left;
+}
+.sub-photo-right {
+  text-align: right;
+}
+
+.moveUp {
+  position: relative;
+  top: -130px;
+  margin-bottom: -130px;
+}
+.moveRight10px {
+  position: relative;
+  right: -10px;
+}
+.moveRight20px {
+  position: relative;
+  right: -20px;
+}
+.moveRight30px {
+  position: relative;
+  right: -30px;
+}
+.moveRight100px {
+  position: relative;
+  right: -100px;
+}
+.moveLeft10px {
+  position: relative;
+  left: -10px;
+}
+.moveLeft30px {
+  position: relative;
+  left: -30px;
+}
+.moveLeft50px {
+  position: relative;
+  left: -50px;
+}
+
+.credit-box {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.credit {
+  width: fit-content;
+  height: fit-content;
+}
+.credit-list {
+  display: flex;
+  -moz-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  list-style: none;
+}
+.credit-list a {
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 0.625vw;
+  justify-items: center;
+  width: fit-content;
+  cursor: pointer;
+  overflow: visible;
+  opacity: 1;
+}
+.credit-list a:hover {
+  transition: opacity 0.2s;
+  opacity: 0.5;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  column-gap: 0.625vw;
+  text-align: left;
+  font-size: 2.8vw;
+  color: #333;
+}
+.pdName {
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+}
+.pdPrice {
+  position: relative;
+  letter-spacing: 0.05em;
+  padding-right: 9.9333333333vw;
+}
+.pdPrice::after {
+  position: absolute;
+  display: inline-block;
+  content: "\a0tax in";
+  white-space-collapse: collapse;
+  text-wrap-mode: nowrap;
+  letter-spacing: 0.05em;
+}
+.buyBtn {
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.08em;
+  align-items: center;
+  font-size: 2.8vw;
+  font-weight: bold;
+  color: #333;
+  text-decoration: underline;
+}
+
+.wrap {
+  position: absolute;
+}
+.right {
+  text-align: right;
+  margin-left: auto;
+}
+.btn-item {
+  width: 100%;
+}
+.btnWrap {
+  display: grid;
+  row-gap: 0.6em;
+}
+.linkBtn {
+  border-radius: 3px;
+  text-align: center;
+  border: 2px solid #fff;
+  background-color: #333;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.linkBtn:hover {
+  border: 2px solid #333;
+  background-color: #fff;
+}
+.linkBtn span {
+  align-items: center;
+  color: #fff;
+  font-size: 1em;
+  transition: all 0.5s ease;
+}
+.linkBtn:hover span {
+  color: #333;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    overflow: unset;
+  }
+  .styling-item img {
+    height: 780px;
+  }
+  .product {
+    column-gap: 8px;
+    font-size: 1.5em;
+  }
+  .pdPrice {
+    padding-right: 4em;
+  }
+  .buyBtn {
+    font-size: 1.5em;
+  }
+  .linkBtn span {
+    font-size: 1.5em;
+  }
+}
