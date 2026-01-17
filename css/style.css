@@ -276,7 +276,7 @@ h1 {
     height: 780px;
   }
   .product {
-    column-gap: 8px;
+    column-gap: 0.5em;
     font-size: 1.5em;
   }
   .pdPrice {
