@@ -249,13 +249,13 @@ h1 {
 .linkBtn {
   border-radius: 3px;
   text-align: center;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   background-color: #333;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 .linkBtn:hover {
-  border: 2px solid #333;
+  border: 1px solid #333;
   background-color: #fff;
 }
 .linkBtn span {
