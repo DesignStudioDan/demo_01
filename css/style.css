@@ -35,7 +35,7 @@ a {
 
 .content {
   width: 100%;
-  max-width: 768px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 6vw;
@@ -269,8 +269,8 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-  .content {
-    overflow: unset;
+  h1 {
+    font-size: 6.5em;
   }
   .styling-item img {
     height: 780px;
@@ -287,5 +287,26 @@ h1 {
   }
   .linkBtn span {
     font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content {
+    overflow: unset;
+  }
+  h1 {
+    font-size: 4.5em;
+  }
+  .product {
+    font-size: 1em;
+  }
+  .pdPrice {
+    padding-right: 4em;
+  }
+  .buyBtn {
+    font-size: 1em;
+  }
+  .linkBtn span {
+    font-size: 1em;
   }
 }
