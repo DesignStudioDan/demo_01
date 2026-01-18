@@ -364,7 +364,7 @@ h1 {
   opacity: 1;
 }
 .credit-list a:hover {
-  transition: opacity 0.2s;
+  transition: opacity 0.3s;
   opacity: 0.5;
 }
 
