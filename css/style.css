@@ -2,44 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
-.pt-xs {
-  padding-top: 8px;
-}
-.pt-s {
-  padding-top: 16px;
-}
-.pt-m {
-  padding-top: 32px;
-}
-.pt-l {
-  padding-top: 64px;
-}
-.pt-xl {
-  padding-top: 128px;
-}
-.pb-xs {
-  padding-bottom: 8px;
-}
-.pb-s {
-  padding-bottom: 16px;
-}
-.pb-m {
-  padding-bottom: 32px;
-}
-.pb-l {
-  padding-bottom: 64px;
-}
-.pb-xl {
-  padding-bottom: 128px;
+body {
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-}
-
-body {
-  font-family: "Times New Roman", Times, serif;
 }
 
 #header {
@@ -253,32 +222,22 @@ h1 {
 }
 
 .anchorMenu {
+  padding-top: 128px;
   display: grid;
-  /* 2列を均等な幅(1fr)で設定 */
   grid-template-columns: repeat(2, 1fr);
-  /* タイル間の隙間を10pxに設定 */
   gap: 10px;
-  /* コンテナの最大幅など（任意） */
   max-width: 400px;
   margin: 0 auto;
 }
 .anchorMenu li a {
-  padding: 20px;
-  color: #333;
-  text-decoration: none;
-  text-align: left;
-  font-size: 2rem;
-  line-height: 2rem;
-  border-radius: 8px;
-  /* アニメーション（ホバー時） */
-  transition: background-color 0.3s;
-  /* タイルを正方形にする場合は高さも指定 */
+  display: block;
   aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: left;
-  text-align: start;
   border: 1px solid #333;
-  /* background-color: rgba(255, 255, 255, 0.4); */
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.anchorMenu li a:hover {
+  opacity: 0.6;
 }
 .anchorMen-bg {
   background-size: cover;
@@ -318,12 +277,15 @@ h1 {
 }
 
 .styling-item {
+  padding-top: 128px;
+  padding-bottom: 128px;
   height: fit-content;
 }
 .styling-item img {
   height: 520px;
 }
 .styling {
+  padding-bottom: 64px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -374,6 +336,7 @@ h1 {
 }
 
 .credit-box {
+  padding-top: 128px;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -390,6 +353,7 @@ h1 {
   list-style: none;
 }
 .credit-list a {
+  padding-bottom: 8px;
   display: grid;
   grid-template-columns: max-content auto;
   column-gap: 0.625vw;
@@ -452,6 +416,7 @@ h1 {
   margin-left: auto;
 }
 .btn-item {
+  padding-bottom: 128px;
   width: 100%;
 }
 .btnWrap {
@@ -480,7 +445,6 @@ h1 {
   color: #333;
 }
 
-/* --- TOP戻るボタン（追従型） --- */
 .back-to-top {
   position: fixed;
   right: 20px;
@@ -497,7 +461,6 @@ h1 {
   cursor: pointer;
   z-index: 99;
   transition: 0.4s;
-  /* 最初は隠す */
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
@@ -508,11 +471,7 @@ h1 {
   visibility: visible;
   transform: translateY(0);
 }
-.back-to-top.is-visible:hover {
-  opacity: 0.6;
-}
 
-/* フッターのスタイル */
 .footer {
   background: #f9f9f9;
   padding: 60px 0 30px;
