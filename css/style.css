@@ -284,19 +284,19 @@ h1 {
 .anchorMen-bg {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top 0 right -10px;
+  background-position: center;
 }
 .bg-01 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_style01_01.png);
+  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_01.jpg);
 }
 .bg-02 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_style02_01.png);
+  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_02.jpg);
 }
 .bg-03 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_style03_02.png);
+  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_03.jpg);
 }
 .bg-04 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_style04_01.png);
+  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_04.jpg);
 }
 
 .fadeUp {
