@@ -1,572 +1,415 @@
-html {
-  scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:url" content="https://designstudiodan.github.io/demo_01/">
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="STYLING BOOK">
+  <meta property="og:description" content="STYLING BOOK 2026 SUMMER COLLECTION">
+  <meta property="og:site_name" content="STYLING BOOK">
+  <meta property="og:image" content="https://designstudiodan.github.io/demo_01/img/banner.jpg">
+  <title>STYLING BOOK</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-body {
-  font-family: "Times New Roman", Times, serif;
-}
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header-hidden">
+    <div class="header-inner">
+      <div class="header-logo">
+        <a href="https://designstudiodan.github.io/demo_01/"><img src="img/SVG/header_logo.svg" alt="ELEMENT RULE"></a>
+      </div>
+      <div class="header-icons">
+        <a href="https://designstudiodan.github.io/demo_01/"><img src="img/SVG/search.svg" alt="Search"></a>
+        <a href="https://designstudiodan.github.io/demo_01/"><img src="img/SVG/favorite.svg" alt="Favorite"></a>
+        <a href="https://designstudiodan.github.io/demo_01/"><img src="img/SVG/cart.svg" alt="Cart"></a>
+        <!-- HamburgerMenu -->
+        <div class="hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
+  <!-- Navigation -->
+  <nav class="nav-menu" id="js-nav">
+    <div class="nav-content">
+      <p class="nav-title">STYLING BOOK<br><span>2026 SUMMER COLLECTION</span></p>
+      <ul class="nav-list">
+        <li><a class="underline-hover" href="https://www.elementrule.co.jp/">NEW ARRIVAL</a></li>
+        <li><a class="underline-hover" href="https://www.elementrule.co.jp/">COLLECTION</a></li>
+        <li><a class="underline-hover" href="https://www.elementrule.co.jp/">SHOP LIST</a></li>
+        <li><a class="underline-hover" href="https://www.elementrule.co.jp/">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
 
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background: rgba(255, 255, 255, 0.95);
-  display: flex;
-  align-items: center;
-  z-index: 1000;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-.header-hidden {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-.header-visible {
-  transform: translateY(0);
-  opacity: 1;
-}
+  <main class="content">
+    <!-- KV -->
+    <section class="kv">
+      <h1>STYLING BOOK<br><span>2026 SUMMER COLLECTION</span></h1>
+      <img class="fadeIn" src="img/img_style04_03.png" alt="">
+    </section>
 
-.header-inner {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    <!-- Anchor -->
+    <ul class="anchorMenu ">
+      <li>
+        <a class="anchorMen-bg bg-01" href="#style-01"></a>
+      </li>
+      <li>
+        <a class="anchorMen-bg bg-02" href="#style-02"></a>
+      </li>
+      <li>
+        <a class="anchorMen-bg bg-03" href="#style-03"></a>
+      </li>
+      <li>
+        <a class="anchorMen-bg bg-04" href="#style-04"></a>
+      </li>
+    </ul>
 
-.header-logo {
-  width: 33%;
-}
-.header-logo img {
-  width: 100%;
-  max-width: 200px;
-}
+    <!-- Style 01 -->
+    <section id="style-01" class="styling-item ">
+      <div class="styling">
+        <div class=" main-photo fadeUp moveLeft10px">
+          <img src="img/img_style01_01.png" alt="">
+        </div>
+        <div class="credit fadeUp">
+          <ul class="credit-list">
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">OUTER</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">TOP</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">PANTS</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub-photo-right moveRight30px fadeUp">
+        <img src="img/img_style01_02.png" alt="">
+      </div>
+      <div class="sub-photo-left moveUp fadeUp">
+        <img src="img/img_style01_03.png" alt="">
+      </div>
+      <div class="credit-box fadeUp ">
+        <ul class="credit-list">
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">OUTER</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">TOP</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">PANTS</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-.header-icons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.header-icons img {
-  width: 18px;
-}
+    <!-- Style 02 -->
+    <section id="style-02" class="styling-item ">
+      <div class="styling">
+        <div class=" credit fadeUp">
+          <ul class="credit-list">
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">OUTER</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">TOP</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">PANTS</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-photo fadeUp moveRight10px">
+          <img src="img/img_style02_01.png" alt="">
+        </div>
+      </div>
+      <div class="sub-photo-left fadeUp">
+        <img src="img/img_style02_02.png" alt="">
+      </div>
+      <div class="sub-photo-right moveUp fadeUp">
+        <img src="img/img_style02_03.png" alt="">
+      </div>
+      <div class="credit-box fadeUp ">
+        <ul class="credit-list">
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">OUTER</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">TOP</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">PANTS</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-.hamburger {
-  width: 30px;
-  height: 24px;
-  position: relative;
-  cursor: pointer;
-  z-index: 1200;
-}
+    <!-- Style 03 -->
+    <section id="style-03" class="styling-item ">
+      <div class="styling">
+        <div class=" main-photo fadeUp moveLeft10px">
+          <img src="img/img_style03_01.png" alt="">
+        </div>
+        <div class="credit fadeUp">
+          <ul class="credit-list">
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">OUTER</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">TOP</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">PANTS</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub-photo-right moveRight10px fadeUp">
+        <img src="img/img_style03_02.png" alt="">
+      </div>
+      <div class="sub-photo-left moveUp moveLeft50px fadeUp">
+        <img src="img/img_style03_03.png" alt="">
+      </div>
+      <div class="credit-box fadeUp ">
+        <ul class="credit-list">
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">OUTER</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">TOP</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">PANTS</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-.hamburger span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #333;
-  transition: all 0.4s;
-}
+    <!-- Style 04 -->
+    <section id="style-04" class="styling-item ">
+      <div class="styling">
+        <div class=" credit fadeUp wrap">
+          <ul class="credit-list">
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">OUTER</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">TOP</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.elementrule.co.jp/">
+                <div class="product">
+                  <div class="pdName">PANTS</div>
+                  <div class="pdPrice">&yen;00,000</div>
+                </div>
+                <div class="buyBtn"><span>BUY</span></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-photo fadeUp right moveRight20px">
+          <img src="img/img_style04_03.png" alt="">
+        </div>
+      </div>
+      <div class="sub-photo-left moveLeft30px fadeUp">
+        <img src="img/img_style04_02.png" alt="">
+      </div>
+      <div class="sub-photo-right moveUp moveRight100px fadeUp">
+        <img src="img/img_style04_01.png" alt="">
+      </div>
+      <div class="credit-box fadeUp ">
+        <ul class="credit-list">
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">OUTER</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">TOP</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.elementrule.co.jp/">
+              <div class="product">
+                <div class="pdName">PANTS</div>
+                <div class="pdPrice">&yen;00,000</div>
+              </div>
+              <div class="buyBtn"><span>BUY</span></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-.hamburger span:nth-child(1) {
-  top: 0;
-}
-.hamburger span:nth-child(2) {
-  top: 11px;
-}
-.hamburger span:nth-child(3) {
-  bottom: 0;
-}
+    <!-- Button -->
+    <section class="btn-item">
+      <div class="btnWrap">
+        <div class="linkBtn">
+          <a href="https://designstudiodan.github.io/demo_01/"><span>掲載アイテム一覧を見る</span></a>
+        </div>
+        <div class="linkBtn">
+          <a href="https://designstudiodan.github.io/demo_01/"><span>新作アイテム一覧を見る</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-.hamburger.active span:nth-child(1) {
-  transform: translateY(11px) rotate(45deg);
-}
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.active span:nth-child(3) {
-  transform: translateY(-12px) rotate(-45deg);
-}
+  <!-- PageTopButton -->
+  <div class="back-to-top" id="js-back-to-top">TOP</div>
 
-.nav-menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 100%;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.98);
-  z-index: 150;
-  transition: right 0.5s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-menu.is-open {
-  right: 0;
-}
-
-.nav-content {
-  text-align: center;
-}
-
-.nav-title {
-  font-size: 1.8rem;
-  letter-spacing: 0.2em;
-  color: #888;
-  margin-bottom: 40px;
-  line-height: 0.9;
-}
-.nav-title span {
-  font-size: 0.7rem;
-}
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-list li {
-  margin: 25px 0;
-}
-.underline-hover {
-  position: relative;
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-  padding-bottom: 5px;
-}
-
-.underline-hover::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #333;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease-in-out;
-}
-
-.underline-hover:hover::after {
-  transform: scaleX(1);
-}
-.nav-list a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.5rem;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-}
-
-.content {
-  width: 100%;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 6vw;
-  padding-right: 6vw;
-  line-height: 2;
-  overflow: hidden;
-}
-
-.kv {
-  width: 100%;
-  height: 100vh;
-  display: table;
-  position: relative;
-}
-h1 {
-  display: table-cell;
-  vertical-align: middle;
-  color: #333;
-  text-align: center;
-  font-size: 8.4vw;
-  letter-spacing: 0.2em;
-  line-height: 0.9;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1);
-}
-.kv span {
-  font-size: 3.2vw;
-}
-.kv img {
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  z-index: -1;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.anchorMenu {
-  padding-top: 128px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-.anchorMenu li a {
-  display: block;
-  aspect-ratio: 1 / 1;
-  border: 1px solid #333;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-.anchorMenu li a:hover {
-  opacity: 0.6;
-}
-.anchorMen-bg {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 8px;
-}
-.bg-01 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_01.jpg);
-}
-.bg-02 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_02.jpg);
-}
-.bg-03 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_03.jpg);
-}
-.bg-04 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_04.jpg);
-}
-
-.fadeUp {
-  opacity: 0;
-  transform: translateY(30px);
-}
-.displayed {
-  animation: fadeUp 1s forwards;
-}
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.styling-item {
-  padding-top: 128px;
-  padding-bottom: 128px;
-  height: fit-content;
-}
-.styling-item img {
-  height: 520px;
-}
-.styling {
-  padding-bottom: 64px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.main-photo {
-  text-align: center;
-}
-.sub-photo-left {
-  text-align: left;
-}
-.sub-photo-right {
-  text-align: right;
-}
-
-.moveUp {
-  position: relative;
-  top: -130px;
-  margin-bottom: -130px;
-}
-.moveRight10px {
-  position: relative;
-  right: -10px;
-}
-.moveRight20px {
-  position: relative;
-  right: -20px;
-}
-.moveRight30px {
-  position: relative;
-  right: -30px;
-}
-.moveRight100px {
-  position: relative;
-  right: -100px;
-}
-.moveLeft10px {
-  position: relative;
-  left: -10px;
-}
-.moveLeft30px {
-  position: relative;
-  left: -30px;
-}
-.moveLeft50px {
-  position: relative;
-  left: -50px;
-}
-
-.credit-box {
-  padding-top: 128px;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-.credit {
-  width: fit-content;
-  height: fit-content;
-}
-.credit-list {
-  display: flex;
-  -moz-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  list-style: none;
-}
-.credit-list a {
-  padding-bottom: 8px;
-  display: grid;
-  grid-template-columns: max-content auto;
-  column-gap: 0.625vw;
-  justify-items: center;
-  width: fit-content;
-  cursor: pointer;
-  overflow: visible;
-  opacity: 1;
-}
-.credit-list a:hover {
-  transition: opacity 0.3s;
-  opacity: 0.5;
-}
-
-.product {
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  align-items: center;
-  column-gap: 0.625vw;
-  text-align: left;
-  font-size: 2.8vw;
-  color: #333;
-}
-.pdName {
-  font-weight: bolder;
-  letter-spacing: 0.05em;
-}
-.pdPrice {
-  position: relative;
-  letter-spacing: 0.05em;
-  padding-right: 9.9333333333vw;
-}
-.pdPrice::after {
-  position: absolute;
-  display: inline-block;
-  content: "\a0tax in";
-  white-space-collapse: collapse;
-  text-wrap-mode: nowrap;
-  letter-spacing: 0.05em;
-}
-.buyBtn {
-  position: relative;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  letter-spacing: 0.08em;
-  align-items: center;
-  font-size: 2.8vw;
-  font-weight: bold;
-  color: #333;
-  text-decoration: underline;
-}
-
-.wrap {
-  position: absolute;
-}
-.right {
-  text-align: right;
-  margin-left: auto;
-}
-.btn-item {
-  padding-bottom: 128px;
-  width: 100%;
-}
-.btnWrap {
-  display: grid;
-  row-gap: 0.6em;
-}
-.linkBtn {
-  border-radius: 3px;
-  text-align: center;
-  border: 1px solid #fff;
-  background-color: #333;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.linkBtn:hover {
-  border: 1px solid #333;
-  background-color: #fff;
-}
-.linkBtn span {
-  align-items: center;
-  color: #fff;
-  font-size: 1em;
-  transition: all 0.5s ease;
-}
-.linkBtn:hover span {
-  color: #333;
-}
-
-.back-to-top {
-  position: fixed;
-  right: 20px;
-  bottom: 30px;
-  width: 50px;
-  height: 50px;
-  background: #333;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.7rem;
-  cursor: pointer;
-  z-index: 99;
-  transition: 0.4s;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(20px);
-}
-
-.back-to-top.is-visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.footer {
-  background: #f9f9f9;
-  padding: 60px 0 30px;
-  margin-top: 100px;
-  text-align: center;
-}
-
-.footer-inner {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.footer-logo {
-  margin-bottom: 30px;
-}
-.footer-logo img {
-  width: 50%;
-  max-width: 250px;
-}
-
-.footer-sns {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-bottom: 40px;
-}
-
-.footer-sns a {
-  transition: 0.3s;
-}
-
-.footer-sns a:hover {
-  opacity: 0.3;
-}
-
-.copyright {
-  font-size: 0.7rem;
-  color: #999;
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 5em;
-  }
-  .kv span {
-    font-size: 0.38em;
-  }
-  .anchorMenu {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: unset;
-  }
-  .styling-item img {
-    height: 780px;
-  }
-  .credit-list a {
-    column-gap: 0.5em;
-  }
-  .product {
-    column-gap: 0.5em;
-    font-size: 1.5em;
-  }
-  .pdPrice {
-    padding-right: 3.3em;
-  }
-  .buyBtn {
-    font-size: 1.5em;
-  }
-  .linkBtn {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .linkBtn span {
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .content {
-    overflow: unset;
-  }
-  h1 {
-    font-size: 4.5em;
-  }
-  .product {
-    font-size: 1.2em;
-  }
-  .pdPrice {
-    padding-right: 3em;
-  }
-  .buyBtn {
-    font-size: 1.2em;
-  }
-  .linkBtn span {
-    font-size: 1.2em;
-  }
-}
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><img src="img/SVG/header_logo.svg" alt="BRAND LOGO"></div>
+      <div class="footer-sns">
+        <a href="https://www.elementrule.co.jp/" aria-label="Instagram" target="_blank"><img src="img/SVG/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.elementrule.co.jp/" aria-label="Facebook" target="_blank"><img src="img/SVG/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.elementrule.co.jp/" aria-label="X" target="_blank"><img src="img/SVG/x.svg" alt="X"></a>
+        <a href="https://www.elementrule.co.jp/" aria-label="LINE" target="_blank"><img src="img/SVG/line.svg" alt="LINE"></a>
+      </div>
+      <p class="copyright">&copy; 2026 ELEMENT RULE All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
