@@ -30,13 +30,17 @@
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   cursor: pointer;
 }
 
 body {
   font-family: "Times New Roman", Times, serif;
 }
+
+/* section {
+  padding-bottom: 128px;
+} */
 
 #header {
   position: fixed;
@@ -246,6 +250,53 @@ h1 {
   to {
     opacity: 1;
   }
+}
+
+.anchorMenu {
+  display: grid;
+  /* 2列を均等な幅(1fr)で設定 */
+  grid-template-columns: repeat(2, 1fr);
+  /* タイル間の隙間を10pxに設定 */
+  gap: 10px;
+  /* コンテナの最大幅など（任意） */
+  max-width: 400px;
+  margin: 0 auto;
+}
+.anchorMenu li a {
+  color: #333;
+  text-decoration: none;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 8px;
+  /* font-weight: bold; */
+  /* アニメーション（ホバー時） */
+  transition: background-color 0.3s;
+  /* タイルを正方形にする場合は高さも指定 */
+  aspect-ratio: 3 / 4;
+  display: flex;
+  justify-content: left;
+  text-align: start;
+  border: 1px solid #333;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+}
+.anchorMen-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 0 right -10px;
+}
+.bg-01 {
+  background-image: url(/img/img_style01_01.png);
+}
+.bg-02 {
+  background-image: url(/img/img_style02_01.png);
+}
+.bg-03 {
+  background-image: url(/img/img_style03_01.png);
+}
+.bg-04 {
+  background-image: url(/img/img_style04_03.png);
 }
 
 .fadeUp {
@@ -509,6 +560,10 @@ h1 {
   }
   .kv span {
     font-size: 0.38em;
+  }
+  .anchorMenu {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: unset;
   }
   .styling-item img {
     height: 780px;
