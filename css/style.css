@@ -137,6 +137,14 @@ a {
 .nav-list li {
   margin: 25px 0;
 }
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
 .underline-hover {
   position: relative;
   text-decoration: none;
@@ -144,7 +152,6 @@ a {
   font-size: 18px;
   padding-bottom: 5px;
 }
-
 .underline-hover::after {
   content: "";
   position: absolute;
@@ -157,16 +164,8 @@ a {
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
-
 .underline-hover:hover::after {
   transform: scaleX(1);
-}
-.nav-list a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.5rem;
-  font-weight: 300;
-  letter-spacing: 0.1em;
 }
 
 .content {
@@ -176,7 +175,7 @@ a {
   margin-right: auto;
   padding-left: 6vw;
   padding-right: 6vw;
-  line-height: 2;
+  line-height: 1;
   overflow: hidden;
 }
 
@@ -352,7 +351,7 @@ h1 {
   list-style: none;
 }
 .credit-list a {
-  padding-bottom: 8px;
+  margin-bottom: 16px;
   display: grid;
   grid-template-columns: max-content auto;
   column-gap: 0.625vw;
@@ -361,10 +360,6 @@ h1 {
   cursor: pointer;
   overflow: visible;
   opacity: 1;
-}
-.credit-list a:hover {
-  transition: opacity 0.3s;
-  opacity: 0.5;
 }
 
 .product {
@@ -375,6 +370,7 @@ h1 {
   column-gap: 0.625vw;
   text-align: left;
   font-size: 2.8vw;
+  line-height: 1em;
   color: #333;
 }
 .pdName {
@@ -395,16 +391,28 @@ h1 {
   letter-spacing: 0.05em;
 }
 .buyBtn {
+  padding: 0.625vw;
   position: relative;
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.08em;
   align-items: center;
-  font-size: 2.8vw;
+  font-size: 2.6vw;
   font-weight: bold;
   color: #333;
-  text-decoration: underline;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+.credit-list a:hover .buyBtn {
+  background-color: #333;
+  color: #fff;
+}
+.credit-list .underline-hover {
+  padding-bottom: unset;
+}
+.credit-list a:hover .underline-hover::after {
+  transform: scaleX(1);
 }
 
 .wrap {
@@ -534,7 +542,8 @@ h1 {
     padding-right: 3.3em;
   }
   .buyBtn {
-    font-size: 1.5em;
+    padding: 0.15em;
+    font-size: 1em;
   }
   .linkBtn {
     width: 80%;
