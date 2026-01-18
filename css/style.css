@@ -274,7 +274,7 @@ h1 {
   /* アニメーション（ホバー時） */
   transition: background-color 0.3s;
   /* タイルを正方形にする場合は高さも指定 */
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   display: flex;
   justify-content: left;
   text-align: start;
@@ -293,10 +293,10 @@ h1 {
   background-image: url(https://designstudiodan.github.io/demo_01//img/img_style02_01.png);
 }
 .bg-03 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_style03_01.png);
+  background-image: url(https://designstudiodan.github.io/demo_01//img/img_style03_02.png);
 }
 .bg-04 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_style04_03.png);
+  background-image: url(https://designstudiodan.github.io/demo_01//img/img_style04_01.png);
 }
 
 .fadeUp {
