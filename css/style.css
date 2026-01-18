@@ -263,14 +263,13 @@ h1 {
   margin: 0 auto;
 }
 .anchorMenu li a {
+  padding: 20px;
   color: #333;
   text-decoration: none;
-  padding: 20px;
   text-align: left;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   border-radius: 8px;
-  /* font-weight: bold; */
   /* アニメーション（ホバー時） */
   transition: background-color 0.3s;
   /* タイルを正方形にする場合は高さも指定 */
@@ -285,6 +284,7 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 8px;
 }
 .bg-01 {
   background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_01.jpg);
