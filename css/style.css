@@ -10,6 +10,10 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 #header {
   position: fixed;
@@ -228,31 +232,12 @@ h1 {
   max-width: 400px;
   margin: 0 auto;
 }
-.anchorMenu li a {
+.anchorMenu img {
   display: block;
   aspect-ratio: 1 / 1;
   border: 1px solid #333;
   border-radius: 8px;
   transition: 0.3s;
-}
-
-.anchorMen-bg {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 8px;
-}
-.bg-01 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_01.jpg);
-}
-.bg-02 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_02.jpg);
-}
-.bg-03 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_03.jpg);
-}
-.bg-04 {
-  background-image: url(https://designstudiodan.github.io/demo_01//img/img_anchor_04.jpg);
 }
 
 .fadeUp {
@@ -564,7 +549,7 @@ h1 {
   h1 {
     font-size: 4.5em;
   }
-  .anchorMenu li a:hover {
+  .anchorMenu img:hover {
     transform: translateY(-10px);
   }
   .product {
