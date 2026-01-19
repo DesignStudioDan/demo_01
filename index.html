@@ -17,11 +17,42 @@
 
 </head>
 <body>
+  <header id="header" class="header-hidden">
+    <div class="header-inner">
+      <div class="header-logo">
+        <a href="https://designstudiodan.github.io/demo_01/"><img src="img/SVG/header_logo.svg" alt="ELEMENT RULE"></a>
+      </div>
+
+      <div class="header-icons">
+        <a href="https://designstudiodan.github.io/demo_01/"><img src="img/SVG/search.svg" alt="Search"></a>
+        <a href="https://designstudiodan.github.io/demo_01/"><img src="img/SVG/favorite.svg" alt="Favorite"></a>
+        <a href="https://designstudiodan.github.io/demo_01/"><img src="img/SVG/cart.svg" alt="Cart"></a>
+        <div class="hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-menu" id="js-nav">
+    <div class="nav-content">
+      <p class="nav-title">STYLING BOOK<br><span>2026 SUMMER COLLECTION</span></p>
+      <ul class="nav-list">
+        <li><a class="underline-hover" href="https://www.elementrule.co.jp/">NEW ARRIVAL</a></li>
+        <li><a class="underline-hover" href="https://www.elementrule.co.jp/">COLLECTION</a></li>
+        <li><a class="underline-hover" href="https://www.elementrule.co.jp/">SHOP LIST</a></li>
+        <li><a class="underline-hover" href="https://www.elementrule.co.jp/">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main class="content">
     <!-- KV -->
-    <section class="kv fadeIn">
-      <h1 class="fadeUp">STYLING BOOK<span>2026 SUMMER COLLECTION</span></h1>
-      <img src="img/img_style04_03.png" alt="">
+    <section class="kv">
+      <h1 class="">STYLING BOOK<br><span>2026 SUMMER COLLECTION</span></h1>
+      <img class="fadeIn" src="img/img_style04_03.png" alt="">
     </section>
     <!-- Style 01 -->
     <section class="styling-item pt-xl pb-xl">
@@ -67,8 +98,8 @@
       <div class="sub-photo-left moveUp fadeUp">
         <img src="img/img_style01_03.png" alt="">
       </div>
-      <div class="credit-box fadeUp pt-xl pb-xl">
-        <ul class="credit-list pb-xl">
+      <div class="credit-box fadeUp pt-xl">
+        <ul class="credit-list">
           <li class="pb-xs">
             <a href="https://www.elementrule.co.jp/">
               <div class="product">
@@ -143,8 +174,8 @@
       <div class="sub-photo-right moveUp fadeUp">
         <img src="img/img_style02_03.png" alt="">
       </div>
-      <div class="credit-box fadeUp pt-xl pb-xl">
-        <ul class="credit-list pb-xl">
+      <div class="credit-box fadeUp pt-xl">
+        <ul class="credit-list">
           <li class="pb-xs">
             <a href="https://www.elementrule.co.jp/">
               <div class="product">
@@ -219,8 +250,8 @@
       <div class="sub-photo-left moveUp moveLeft50px fadeUp">
         <img src="img/img_style03_03.png" alt="">
       </div>
-      <div class="credit-box fadeUp pt-xl pb-xl">
-        <ul class="credit-list pb-xl">
+      <div class="credit-box fadeUp pt-xl">
+        <ul class="credit-list">
           <li class="pb-xs">
             <a href="https://www.elementrule.co.jp/">
               <div class="product">
@@ -295,8 +326,8 @@
       <div class="sub-photo-right moveUp moveRight100px fadeUp">
         <img src="img/img_style04_01.png" alt="">
       </div>
-      <div class="credit-box fadeUp pt-xl pb-xl">
-        <ul class="credit-list pb-xl">
+      <div class="credit-box fadeUp pt-xl">
+        <ul class="credit-list">
           <li class="pb-xs">
             <a href="https://www.elementrule.co.jp/">
               <div class="product">
@@ -331,14 +362,29 @@
     <section class="btn-item pb-xl">
       <div class="btnWrap">
         <div class="linkBtn">
-          <a href="https://www.elementrule.co.jp/"><span>掲載アイテム一覧を見る</span></a>
+          <a href="https://designstudiodan.github.io/demo_01/"><span>掲載アイテム一覧を見る</span></a>
         </div>
         <div class="linkBtn">
-          <a href="https://www.elementrule.co.jp/"><span>新作アイテム一覧を見る</span></a>
+          <a href="https://designstudiodan.github.io/demo_01/"><span>新作アイテム一覧を見る</span></a>
         </div>
       </div>
     </section>
   </main>
+  <div class="back-to-top" id="js-back-to-top">TOP</div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><img src="img/SVG/header_logo.svg" alt="BRAND LOGO"></div>
+
+      <div class="footer-sns">
+        <a href="https://www.elementrule.co.jp/" aria-label="Instagram" target="_blank"><img src="img/SVG/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.elementrule.co.jp/" aria-label="Facebook" target="_blank"><img src="img/SVG/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.elementrule.co.jp/" aria-label="X" target="_blank"><img src="img/SVG/x.svg" alt="X"></a>
+        <a href="https://www.elementrule.co.jp/" aria-label="LINE" target="_blank"><img src="img/SVG/line.svg" alt="LINE"></a>
+      </div>
+
+      <p class="copyright">&copy; 2026 ELEMENT RULE All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
-<script type="text/javascript" src="js/fadeup.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </html>
