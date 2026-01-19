@@ -19,15 +19,28 @@ navLinks.forEach((link) => {
   });
 });
 
+function toggleMenu() {
+  hamburger.classList.toggle("active");
+  const isOpen = nav.classList.toggle("is-open");
+
+  if (!isOpen && window.scrollY <= 300) {
+    header.classList.remove("header-visible");
+    header.classList.add("header-hidden");
+  }
+}
+
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
-  if (scrollY > 300) {
+  const isNavOpen = nav.classList.contains("is-open");
+
+  if (isNavOpen || scrollY > 300) {
     header.classList.add("header-visible");
     header.classList.remove("header-hidden");
   } else {
     header.classList.remove("header-visible");
     header.classList.add("header-hidden");
   }
+
   if (scrollY > 500) {
     backToTop.classList.add("is-visible");
   } else {
