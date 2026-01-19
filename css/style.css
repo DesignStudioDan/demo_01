@@ -231,6 +231,7 @@ h1 {
 
 .concept-main {
   font-size: 1.5rem;
+  line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.15em;
   margin-bottom: 30px;
